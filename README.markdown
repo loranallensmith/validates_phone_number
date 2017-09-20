@@ -82,7 +82,7 @@ end
 
 ```ruby
 class Person < ActiveRecord::Base
-  validates :mobile, :phone_number => {:ten_digits => true, :seven_digits => true, :allow_blank => true, :message => "Phone number must be either seven or digits in length, or blank."}
+  validates :mobile, :phone_number => {:ten_digits => true, :seven_digits => true, :allow_blank => true, :message => "Phone number must be either seven or ten digits in length, or blank."}
 end
 ```
 
